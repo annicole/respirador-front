@@ -1,0 +1,26 @@
+<div class="header d-flex justify-content-between">
+    <div class="d-flex justify-content-start">
+      <ul class="nav">
+        <li class="nav-item" *ngFor="let li of listNav">
+          <a class="nav-link active" [routerLink]="[li.router]" [routerLinkActive]="['activate']">{{li.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-end" *ngIf="renderButton">
+      <div class="form-group has-search">
+        <span class="material-icons form-control-feedback">
+          search
+        </span>
+        <input type="text" class="form-control search-input" placeholder="{{titleSelect}}"
+          (input)="onSearchChange($event.target.value)">
+      </div>
+      <!-- <a class="btn" data-toggle="tooltip" data-placement="top" title="Nuevo"
+     (click)="onClickButon()">
+      <i class="material-icons"> add </i></a>-->
+      <div class="example-button-container">
+        <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+          <mat-icon>filter_list</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
