@@ -7,6 +7,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { RespiradorComponent } from './pages/respirador/respirador.component';
 import { HeaderTableComponent } from './components/header-table/header-table.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { NuevoUsuarioComponent } from './pages/forms/nuevo-usuario/nuevo-usuario.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { HeaderComponent } from './components/header/header.component';
     LoginComponent,
     RespiradorComponent,
     HeaderTableComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    UsuariosComponent,
+    NuevoUsuarioComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
