@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
         icon: 'person_add',
         text: 'Usuarios',
         function: '/usuario',
-        class: 'orange-bg'
+        class: 'black-bg'
       },
       {
         icon: 'dvr',

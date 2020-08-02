@@ -7,7 +7,7 @@
       </ul>
     </div>
     <div class="d-flex justify-content-end" *ngIf="renderButton">
-      <div class="form-group has-search">
+      <div class="form-group has-search mr-1">
         <span class="material-icons form-control-feedback">
           search
         </span>
@@ -17,10 +17,8 @@
       <!-- <a class="btn" data-toggle="tooltip" data-placement="top" title="Nuevo"
      (click)="onClickButon()">
       <i class="material-icons"> add </i></a>-->
-      <div class="example-button-container">
-        <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
-          <mat-icon>filter_list</mat-icon>
-        </button>
-      </div>
+      <button mat-mini-fab class="ml-1 button-add" (click)="onClickButon()">
+        <i class="material-icons"> add </i>
+      </button>
     </div>
   </div>

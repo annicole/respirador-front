@@ -73,11 +73,16 @@ export class UsuariosComponent implements OnInit {
     });
   }
 
- /* delete(id: number) {
+ delete(id: number) {
     Swal.fire({
-      title: '¿Estas seguro?', text: "Desea eliminar el usuario",
-      type: 'warning', showCancelButton: true, confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33', confirmButtonText: 'Si!', cancelButtonText: 'Cancelar!'
+      title: '¿Estas seguro?', 
+      text: "Desea eliminar el usuario",
+      icon: 'warning',
+      showCancelButton: true, 
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si!', 
+      cancelButtonText: 'Cancelar!'
     }).then((result) => {
       if (result.value) {
         this.usuarioService.delete(id, this.auth.token).subscribe(res => {
@@ -90,7 +95,7 @@ export class UsuariosComponent implements OnInit {
         });
       }
     });
-  }*/
+  }
 
   async onSearchChange(searchValue: string) {
     this.getUsuarios(searchValue);

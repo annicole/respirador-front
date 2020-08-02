@@ -12,7 +12,6 @@
             <th scope="col">Usuario</th>
             <th scope="col">Correo</th>
             <th scope="col">Celular</th>
-            <th scope="col">Departamento</th>
             <th scope="col">Opciones</th>
           </tr>
         </thead>
@@ -21,7 +20,6 @@
             <td>{{u.username}}</td>
             <td>{{u.email}}</td>
             <td>{{u.celular}}</td>
-            <td>{{u.Departamento.departamento |titlecase}}</td>
             <td>
               <a class="btn" data-toggle="tooltip" data-placement="top" title="Editar" (click)="updateUsuario(u)"><i
                   class="material-icons">create</i></a>
